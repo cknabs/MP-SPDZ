@@ -1,0 +1,24 @@
+from util import if_else
+import os
+
+program.bit_length = 16
+
+NUM_RECIPIENTS = int(os.environ["NUM_RECIPIENTS"])
+SHOW_UP = int(os.environ["SHOW_UP"])
+THRESHOLD = int(os.environ["THRESHOLD"])
+
+def assess_thresholded_stats():
+    """ Assess thresholded statistics """
+    print_ln('Assessing thresholded statistics')
+    helper_vals = [sint.get_input_from(0) for i in range(SHOW_UP)]
+    distrb_vals = [sint.get_input_from(0) for i in range(SHOW_UP)]
+    print_ln('IN0: %s', helper_vals[0], print_secrets=True)
+    print_ln('IN1: %s', distrb_vals[0], print_secrets=True)
+
+    if SHOW_UP >= THRESHOLD: 
+        sum = 0
+        for i in range (SHOW_UP):
+            sum += helper_vals[i] + distrb_vals[i]
+        print_ln('OUT: %s', sum.reveal(0))
+
+assess_thresholded_stats()

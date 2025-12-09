@@ -1,7 +1,8 @@
 #!/bin/sh
 
-source .envrc
+# source .envrc # Use env variables instead
 
+mkdir -p Player-Data
 PARTY0_INPUT=Player-Data/Input-P0-0
 PARTY1_INPUT=Player-Data/Input-P1-0
 

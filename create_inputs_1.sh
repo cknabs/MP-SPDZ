@@ -13,5 +13,6 @@ for (( i=1; i<=$SHOW_UP; i++ ))
 do 
     B=$(($RANDOM % 2))
     echo "$B " >> $PARTY0_INPUT
+    echo "$B " >> $PARTY0_INPUT
     echo "$((1 - $B)) " >> $PARTY1_INPUT
 done

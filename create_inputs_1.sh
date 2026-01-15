@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # source .envrc # Use env variables instead
 

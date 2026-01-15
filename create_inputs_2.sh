@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -euo pipefail
+
+: "${NUM_RECIPIENTS:?NUM_RECIPIENTS is not set}"
+
 # source .envrc # Use env variables instead
 
 mkdir -p Player-Data

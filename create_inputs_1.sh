@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -euo pipefail
+
+: "${SHOW_UP:?SHOW_UP is not set}"
+
 # source .envrc # Use env variables instead
 
 mkdir -p Player-Data

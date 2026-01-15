@@ -58,8 +58,8 @@ Programs/Functions
 *.o
 *.so
 *.pyc
-*.bc
-*.sch
+# *.bc
+# *.sch
 *.a
 *.static
 *.d
